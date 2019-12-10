@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../../../assets/Fonts/Roboto-Regular.woff2) format("woff2")
+}
+
+webview {
+    width: 100vw;
+    height: 92vh;
+    margin-top: 2vh;
+}
+
+body {
+    height: 98vh;
+    width: 100vw;
+    background-color: #cacaca;
+    color: black;
+    font: "Roboto", sans-serif;
+    margin-top: 2vh;
+    overflow: hidden !important;
+    caret-color: white;
+}
+
+.material-icons {
+    vertical-align: -14%
+}
+
+.albi-pointer {
+    cursor: pointer
+}
+
+.albi-flex {
+    display: flex;
+    padding-bottom: 0;
+}
+
+.albi-dropdown {
+    border: 10px solid;
+    border-top: 0;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent #aaa transparent;
+    margin-left: 13.5vw!important;
+    padding: 0
+}
+
+#home, #lastPage, #nextPage, #refresh, #zoom, #settings {
+    width: 30px!important;
+    height: 30px!important;
+    margin: auto;
+    margin-right: .5vw;
+}
+
+#currentURL {
+    width: 95vw;
+    margin-right: .5vw
+}
+
+#zoomBox {
+    position: absolute;
+    top: 8vh;
+    right: 1.5vw
+}
+
+#zoomValue {
+    overflow: visible
+}
+
+#zoomContainer {
+    padding: 4px!important;
+    background: #aaa
+}
+
+#zoomContainer {
+    height: 30px;
+    padding: 4px!important;
+    background: #aaa;
+}
+
+#zoomInput {
+    margin-bottom: .5vh
+}
+
+#loader {
+    position: absolute;
+    top: 4vh;
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid blue;
+    border-bottom: 4px solid blue;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+::selection {
+    background: #00a2ff
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>AlBi Look - AllBot</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" charset="UTF-8" href="../../tools/allbot/CSS/w3.css">
+        <link rel="stylesheet" type="text/css" charset="UTF-8" href="../../tools/allbot/CSS/google-icons.css">
+        <link rel="stylesheet" type="text/css" charset="UTF-8" href="main.css">
+    </head>
+    <body>
+        <div id="startPage" class="">
+            <div class="w3-margin w3-padding-large w3-center w3-white w3-round-xlarge" id="header">
+                <h1>AllBot Look</h1>
+                <h3>Where's Waldo?</h3>
+            </div>
+            <div class="w3-container">
+                <input class="w3-input albi-width-100" maxlength="2048" type="text" id="lookup"
+                    placeholder="What would you like AlBi to look for?">
+            </div>
+        </div>
+        <div id="searchBar" class="w3-hide">
+            <div class="albi-flex">
+                <i class="material-icons w3-hover-light-blue albi-pointer" id="lastPage">arrow_back</i>
+                <i class="material-icons w3-hover-light-blue albi-pointer" id="nextPage">arrow_forward</i>
+                <i class="material-icons w3-hover-light-blue albi-pointer" id="refresh">refresh</i>
+                <i class="material-icons w3-hover-light-blue albi-pointer" id="home">home</i>
+                <input class="w3-input" maxlength="2048" type="text" id="currentURL">
+                <i class="material-icons w3-hover-light-blue albi-pointer" id="zoom">search</i>
+            </div>
+        </div>
+        <div class="w3-hide" id="zoomBox" style="width: 15%;">
+            <div class="albi-dropdown"></div>
+            <div id="zoomContainer">
+                <input type="number" class="w3-input" id="zoomInput">
+                <div id="zoomValue">100%</div>
+            </div>
+        </div>
+        <div class="w3-hide" id="loader"></div>
+        <webview id="results" src="" class="w3-hide" useragent=""></webview>
+    </body>
+    <script type="text/javascript" charset="UTF-8" src="main.js"></script>
+</html>

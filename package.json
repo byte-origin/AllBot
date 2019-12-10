@@ -1,0 +1,39 @@
+{
+  "name": "@byte-origin/allbot",
+  "version": "0.0.2",
+  "description": "AllBot. The bot that can accomplish all.",
+  "main": "index.js",
+  "dependencies": {
+    "gm": "^1.23.1",
+    "html-entities": "^1.2.1",
+    "image-convert": "^0.1.33",
+    "open": "^7.0.0"
+  },
+  "devDependencies": {
+    "electron": "^7.1.2",
+    "electron-packager": "^14.1.1"
+  },
+  "scripts": {
+    "test": "electron index.js",
+    "package-mac": "electron-packager . --name=AllBot --debug=electron-packager --overwrite --platform=darwin --arch=x64 --icon=assets/AllBot\\ v2.png --prune=true --out=out",
+    "package-win": "electron-packager . AllBot --overwrite --asar --platform=win32 --arch=x64 --icon=assets/tools/allbot/AllBot.AppImage --prune=true --out=out --version-string.CompanyName=\"BYTe Company\" --version-string.FileDescription=\"0.0.2\" --version-string.ProductName=\"AllBot\"",
+    "package-linux": "electron-packager . AllBot.AppImage --overwrite --asar --platform=linux --arch=x64 --icon=assets/tools/allbot/AllBot.AppImage --prune=true --out=out"
+  },
+  "keywords": [
+    "AllBot",
+    "allbot"
+  ],
+  "author": "Jakob Currin",
+  "license": "SEE LICENSE IN License.txt",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/byte-origin/AllBot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/byte-origin/AllBot/issues"
+  },
+  "homepage": "https://github.com/byte-origin/AllBot#readme"
+}

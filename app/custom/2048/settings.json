@@ -1,0 +1,16 @@
+{
+    "loadFile": {
+        "protocol": "file",
+        "slashes": true,
+        "pathname": "localDir/main.html"
+    },
+    "width": 800,
+    "height": 700,
+    "webPreferences": {
+        "nodeIntegration": true,
+        "nodeIntegrationInWorker": false,
+        "webviewTag": true,
+        "webSecurity": false
+    },
+    "menuBarVisibility": false
+}

@@ -1,0 +1,16 @@
+{
+    "loadFile": {
+        "protocol": "https",
+        "slashes": true,
+        "pathname": "calendar.google.com/"
+    },
+    "width": 700,
+    "height": 700,
+    "webPreferences": {
+        "nodeIntegration": true,
+        "nodeIntegrationInWorker": false,
+        "webviewTag": true,
+        "webSecurity": false
+    },
+    "menuBarVisibility": false
+}

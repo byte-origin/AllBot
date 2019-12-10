@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html onclick="keepFocusInTextbox(event)">
+  <head>
+    <meta charset="UTF-8">
+    <title>Calculator - AllBot</title>
+    <link rel="stylesheet" type="text/css" charset="UTF-8" href="main.css">
+    <script>var require = eval;</script>
+    <script type="text/javascript" charset="UTF-8" src="third-party-scripts/assert.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="third-party-scripts/biginteger.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="third-party-scripts/Chart.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="calculator-parser.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="calculator-backends.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="ui.js"></script>
+  </head>
+  <body onload="init()">
+    <div id="controls">
+      <h1>Compilers 101 Toy Calculator</h1>
+      <p class="srclink"><a href="docs/calculator-parser.html">parser source</a>
+        | <a href="docs/calculator-backends.html">back-end source</a>
+        | <a href="https://github.com/jorendorff/toy-calculator">on github</a></p>
+      <ul id="options">
+        <li><label><input type="radio" name="mode" value="json" checked>JSON mode</label>
+        <li><label><input type="radio" name="mode" value="blocks">Scratch mode</label>
+        <li><label><input type="radio" name="mode" value="mathml">MathML mode</label>
+        <li><label><input type="radio" name="mode" value="calc">calculator mode</label>
+        <li><label><input type="radio" name="mode" value="fraction">fraction mode</label>
+        <li><label><input type="radio" name="mode" value="graph">graph mode</label>
+        <li><label><input type="radio" name="mode" value="complex">complex mode</label>
+      </ul>
+      <pre id="sourcecode"></pre>
+    </div>
+    <div id="repl">
+      <div id="output"></div>
+      <div>
+        <textarea id="input" class="input" wrap="off" onkeydown="inputKeydown(event)" rows="1"></textarea>
+      </div>
+    </div>
+  </body>
+</html>

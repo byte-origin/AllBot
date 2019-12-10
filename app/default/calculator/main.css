@@ -1,0 +1,142 @@
+body {
+    background: white;
+    color: black;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 22px;
+}
+
+#controls {
+    background-color: beige;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 1em;
+    overflow: auto;
+}
+
+#repl {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 30%;
+    right: 0;
+    padding: 1em;
+    overflow: auto;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0em;
+    font-size: 125%;
+}
+
+h1+div {
+    margin: 0;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+#input {
+    width: 100%;
+    border: none;
+    padding: 8px;
+    overflow: auto;
+    resize: none;
+}
+
+.input {
+    color: black;
+    font: inherit;
+    font-weight: bold;
+    margin-top: .5em;
+}
+
+.normalOutput {
+    color: black;
+    white-space: pre;
+}
+
+.print {
+    color: brown;
+}
+
+.error {
+    color: red;
+}
+
+.propList {
+    color: green;
+}
+
+.message {
+    color: green;
+}
+
+.tabcomplete {
+    color: purple;
+}
+
+span.num {
+    color: black;
+    background-color: white;
+    border-radius: 0.25em;
+    padding: 0.1em 0.3em 0;
+    margin: 0.1em 0.5em 0.1em;
+}
+
+span.expr {
+    display: inline-block;
+    color: white;
+    background-color: green;
+    border-radius: 0.35em;
+    border: 2px outset #339933;
+    padding: 0.1em 0.3em;
+    margin: 0.1em 0.5em;
+}
+
+span.var {
+    display: inline-block;
+    color: black;
+    background-color: #ff8833;
+    border-radius: 0.25em;
+    padding: 0.1em 0.3em 0;
+    border: 2px outset #ff8833;
+    margin: 0 0.5em 0;
+}
+
+.srclink {
+    font-size: 14px;
+}
+
+ul#options {
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-left: 0;
+}
+
+ul#options li {
+    list-style-type: none;
+}
+
+#sourcecode {
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 1em;
+}
+
+math {
+    font-size: 28px;
+}

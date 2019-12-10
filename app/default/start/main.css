@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../../../assets/Fonts/Roboto-Regular.woff2) format("woff2")
+}
+
+body {
+    height: 100vh;
+    width: 99.25vw;
+    background-color: #acacac;
+    color: #000;
+    font: Roboto, sans-serif !important;
+    margin-right: 0.25vw !important;
+}
+
+.albi-pointer {
+    cursor: pointer
+}
+
+.albi-hr {
+    width: 73%;
+    border: 2px #000 solid
+}
+
+.albi-search {
+    width: 25%;
+    margin-left: 2%
+}
+
+#search {
+    display: flex;
+    align-items: center
+}
+
+.albi-no-select {
+    user-select: none
+}
+
+.albi-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+}
+
+.albi-flexbox-child {
+    padding: 8px;
+    overflow: auto;
+    width: 47vw;
+    height: 52vh;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid black;
+    margin: 1vh auto;
+    border-radius: 8px;
+}
+
+.albi-function-type {
+    display: flexbox;
+    margin: 0 0 0 auto;
+    width: fit-content;
+    background: rgb(120, 120, 120);
+    padding: 16px;
+    border-radius: 20px;
+    height: fit-content;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #acacac;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
